@@ -22,14 +22,14 @@ for dirpath, dirnames, filenames in os.walk(PROJECT_NAME):
 
 setup(
     name='django-mfa',
-    version='1.2',
+    version='1.2-def',
     packages=['django_mfa', 'django_mfa.templatetags', 'django_mfa.migrations'],
     include_package_data=True,
     description='A Django deployment package for all hosting types.',
     long_description=README,
-    url='https://github.com/MicroPyramid/django-mfa',
-    author='Micropyramid',
-    author_email='hello@micropyramid.com',
+    url='https://github.com/defcronyke/django-mfa',
+    author='defcronyke',
+    author_email='jeremy@jeremycarter.ca',
     classifiers=[
         'Environment :: Web Environment',
         'Framework :: Django',
@@ -48,4 +48,5 @@ setup(
         'Framework :: Django :: 2.0',
         'Framework :: Django :: 2.1',
     ],
+    zip_safe=False,
 )
